@@ -1,5 +1,5 @@
 # language-C
 
 
-Correction du C au C++ de la programmation procédurale à l'objet du livre de frederic durillon.
-Sur le chapitre des listes fais par moi - mêmes.
+Correction du C au C++ de la programmation procédurale à l'objet du livre de Frederic Durillon.
+Sur le chapitre des listes fait par moi - mêmes.
