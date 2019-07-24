@@ -1,0 +1,3 @@
+gcc -Wall  exercice4.c -o exercice4 -lm
+
+lm c'est pour seuil ou ceil

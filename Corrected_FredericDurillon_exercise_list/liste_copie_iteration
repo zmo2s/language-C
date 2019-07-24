@@ -1,0 +1,20 @@
+Node *copy(Node *list) {
+
+  Node *newlist, *p, *prev;
+
+  newlist = p = NULL;
+
+  while (list != NULL) {
+      p = malloc(sizeof(*p));
+      strcpy(p->airport, list->airport);
+      if (!newlist)
+          newlist = p;
+      else
+          prev->next = p;
+      prev = p;
+      list = list->next;
+  }
+  prev->next = NULL;
+  return newlist;
+}
+You need to keep a reference to the previous node to update its next in the next iteration.

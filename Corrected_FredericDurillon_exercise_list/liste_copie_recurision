@@ -1,0 +1,23 @@
+struct node *copy(struct node *start1)
+
+{
+
+if(start1==NULL) return;
+
+struct node *temp=(struct node *)malloc(sizeof(struct node));
+
+temp->info=start1->info;
+
+temp->link=copy(start1->link);
+
+return temp;
+
+}
+
+Explanation:
+
+Logic behind this is just create a new node of structure and copy the every existing node to new node .
+Process will continue untill the existing list leads to null.(recursively)
+Note: node is a structure of two members like info (data)and link (point to next node).
+
+

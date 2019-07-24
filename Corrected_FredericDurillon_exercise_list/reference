@@ -1,0 +1,97 @@
+
+programme L2 info cnrs
+
+https://www.di.ens.fr/~granboul/enseignement/mmfai/algo2000-2001/tp3.html
+
+
+trié une liste
+
+
+void trier(liste la)
+{// ici on va ranger les elements dans l'ordre croisssant avant de les afficher.
+   liste temp, temp1, temp3;
+   int min;
+   for(temp=la ; temp!=NULL ; temp=temp->next)
+   {
+     temp3=temp;
+     min=temp->val;
+     for(temp1=temp->next ; temp1!=NULL ; temp1=temp1->next)
+     {
+        if(min > temp1->val)
+        {
+           temp3=temp1; // le 3è temporaire est l'adresse de l'élement où se trouve le minimum
+           min=temp3->val;
+        }
+     }
+     temp3->val=temp->val; //echange des 2 elements...
+     temp->val=min;
+   }
+}
+
+
+https://www.developpez.net/forums/d1039276/c-cpp/c/debuter/tri-liste-chainee/
+
+
+
+geeksforgeeks exercice corrigé en C et C++ lire arbre
+
+https://www.geeksforgeeks.org/construct-a-binary-tree-from-parent-array-representation/
+
+
+arbre
+
+
+Tirer de Wikipedia : (avec comme recherche : implémentation d'un arbre binaire par un tableau)
+
+Les arbres binaires peuvent aussi être rangés dans des tableaux, et si l'arbre est un arbre binaire complet
+, cette méthode ne gaspille pas de place, et la donnée structurée résultante est appelée un tas. 
+Dans cet arrangement compact, un nœud a un indice i, et (le tableau étant basé sur des zéros) 
+ses fils se trouvent aux indices 2i+1 et 2i+2, tandis que son père se trouve (s'il existe) à l'indice floor((i-1)/2). 
+Cette méthode permet de bénéficier d'un encombrement moindre, et d'un meilleur référençage, en particulier 
+durant un parcours préfixe. Toutefois, elle requiert une mémoire contigüe, elle est coûteuse s'il s'agit d'étendre 
+l'arbre et l'espace perdu (dans le cas d'un arbre binaire non complet) est proportionnel à 2h - n pour un arbre 
+de profondeur h avec n nœuds.
+
+
+
+Procédure ecrireNoeud(Arbre n (sous arbre), Entier numeroNoeud)
+ 
+ T[numeroNoeud] <- racine(n);
+ 
+ Si n n'est pas une feuille
+   | fg <- arbreGauche(n);
+   | fd <- arbreDroit(n);
+   | ecrireNoeud(fg, 2*numeroNoeud+1);
+   | ecrireNoeud(fd, 2*numeroNoeud+2);
+
+Le tri par sélection
+http://lwh.free.fr/pages/algo/tri/tri_selection.html
+
+
+outil pour lire les lvire gratuitement : 
+
+https://learning.oreilly.com
+
+
+livre huffmn C
+
+
+ publisher logo Intermediate C Programming
+by Yung-Hsiang Lu
+Published by CRC Press, 2015
+
+
+
+et 
+
+Data Structures using C, 2nd Edition
+by A. K. Sharma
+Published by Pearson India, 2013
+
+
+
+pratique pour huffman et C avancer
+
+Mastering Algorithms with C
+by Kyle Loudon
+Published by O'Reilly Media, Inc., 1999
